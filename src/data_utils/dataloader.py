@@ -209,7 +209,7 @@ class KitchenPairDataset(Dataset):
         
         # Detach from computation graph and move to CPU for storage in self.pairs
         # Split the batch into a list of individual tensors [1, H, W]
-        processed_frames_list = [t.cpu().detach() for t in torch.unbind(normalized_tensor, dim=0)]
+        processed_frames_list = [t.cpu().detach().clone() for t in torch.unbind(normalized_tensor, dim=0)]
         
         return processed_frames_list
     
