@@ -4,7 +4,6 @@ trajectory_images/
 checkpoints/
 tensorboard_logs/
 .cursor/
-runs/
 sweep_checkpoints/
 sweep_tensorboard_logs/
 
@@ -186,3 +185,11 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# experiment's heavy files
+runs/**/final_model.zip
+runs/**/best_model/
+data/kitchen_pairs/
+data/diffusion/ckpt/checkpoint_epoch_*.pth
+data/diffusion/ckpt/latest_checkpoint.pth
+results_for_report.zip
