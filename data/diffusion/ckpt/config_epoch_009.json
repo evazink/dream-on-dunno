@@ -1,0 +1,60 @@
+{
+    "model_config": {
+        "in_img_channels": 2,
+        "out_img_channels": 1,
+        "base_channels": 32,
+        "channel_mults": [
+            1,
+            2,
+            3
+        ],
+        "num_res_blocks_per_level": 1,
+        "attention_resolutions": [
+            30
+        ],
+        "dropout_rate": 0.1,
+        "time_emb_dim": 128,
+        "time_emb_mlp_dim": 512,
+        "initial_img_resolution": 120
+    },
+    "training_args": {
+        "device": "mps",
+        "dataset_dir": "data/kitchen_pairs",
+        "k_step_future": 5,
+        "force_rebuild_dataset": false,
+        "num_workers_loader": 0,
+        "epochs": 100,
+        "batch_size": 8,
+        "learning_rate": 0.0001,
+        "disable_amp": false,
+        "diffusion_timesteps": 1000,
+        "beta_start": 0.0001,
+        "beta_end": 0.02,
+        "img_resolution": 120,
+        "model_base_channels": 32,
+        "model_channel_mults": [
+            1,
+            2,
+            3
+        ],
+        "model_num_res_blocks": 1,
+        "model_attention_resolutions_divisor": 4,
+        "model_time_emb_dim": 128,
+        "model_time_emb_mlp_dim": 512,
+        "model_dropout_rate": 0.1,
+        "checkpoint_dir": "data/diffusion/ckpt",
+        "checkpoint_freq": 10,
+        "save_best_model": true,
+        "resume_from_checkpoint": "latest",
+        "tensorboard_log_dir": "data/diffusion/tb",
+        "tensorboard_run_name_prefix": "diffusion_grayscale_train",
+        "log_freq": 5,
+        "log_images": false,
+        "log_image_freq_multiplier": 10,
+        "model_attention_resolutions": [
+            30
+        ]
+    },
+    "last_epoch": 9,
+    "last_loss": 0.014039163280377383
+}

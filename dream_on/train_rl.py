@@ -47,7 +47,7 @@ def parse():
     p.add_argument("--reward", choices=["sparse", "l2", "ssim"], default="sparse")
     p.add_argument("--lam", type=float, default=0.1, help="weight of the pixel-space shaping term")
     p.add_argument("--goal_every", type=int, default=5, help="re-sample subgoal every N steps (= k)")
-    p.add_argument("--ddim_steps", type=int, default=10)
+    p.add_argument("--ddim_steps", type=int, default=20)
     p.add_argument("--ckpt", type=str, default="data/diffusion/ckpt/best_model.pth")
     p.add_argument("--task", type=str, default="kettle")
     p.add_argument("--max_episode_steps", type=int, default=50)
