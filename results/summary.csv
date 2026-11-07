@@ -1,0 +1,5 @@
+condition,label,seeds,reached_thr,steps_to_thr_mean,steps_to_thr_std,final_success_mean,final_success_std,auc_mean,auc_std,wall_min_mean
+ppo_diffusion_l2_lam0.1,Dream On: PPO + subgoal + L2 reward,2,2/2,80000,14000,0.74,0.06,0.38,0.071,196.3
+ppo_diffusion_ssim_lam0.1,Dream On: PPO + subgoal + SSIM reward,2,0/2,,,0.0,0.0,0.022,0.022,407.0
+ppo_none_sparse,"PPO, state only",8,4/8,36500,4975,0.5,0.5,0.399,0.4,5.7
+sac_none_sparse,"SAC, state only",1,0/1,,,0.0,0.0,0.016,0.0,20.8
