@@ -1,8 +1,12 @@
 run,condition,steps_to_thr,final_success,auc,wall_min,finished
+ppo_current_sparse_s0,ppo_current_sparse,58000,0.8800000000000001,0.5286,120.3,True
 ppo_diffusion_l2_lam0.1_s0,ppo_diffusion_l2_lam0.1,66000,0.8,0.451,197.6,True
 ppo_diffusion_l2_lam0.1_s1,ppo_diffusion_l2_lam0.1,94000,0.68,0.3082,195.1,True
+ppo_diffusion_l2_lam0.1_s2,ppo_diffusion_l2_lam0.1,,0.12000000000000002,0.0694,196.9,True
+ppo_diffusion_sparse_s0,ppo_diffusion_sparse,,0.12000000000000002,0.0245,288.5,True
 ppo_diffusion_ssim_lam0.1_s0,ppo_diffusion_ssim_lam0.1,,0.0,0.0449,613.3,True
 ppo_diffusion_ssim_lam0.1_s1,ppo_diffusion_ssim_lam0.1,,0.0,0.0,200.8,True
+ppo_diffusion_ssim_lam0.1_s2,ppo_diffusion_ssim_lam0.1,,0.27999999999999997,0.0551,204.7,True
 ppo_none_sparse_s0,ppo_none_sparse,38000,1.0,0.7554,5.8,True
 ppo_none_sparse_s1,ppo_none_sparse,,0.0,0.0,5.7,True
 ppo_none_sparse_s2,ppo_none_sparse,,0.0,0.0,5.6,True
