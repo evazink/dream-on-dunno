@@ -2,10 +2,6 @@
 
 Diffusion-generated visual subgoals and pixel-space reward shaping for PPO in sparse-reward robotic manipulation.
 
-This Machine Learning II project builds on *A Dream Is All You Need* by Devin Gupta, Ali Ahmad and Annie Lee (Stanford CS224R, 2025). It compares state-only PPO and SAC with PPO conditioned on diffusion-generated subgoals, using L2 or SSIM shaping on the FrankaKitchen kettle task.
-
-The project adds DDIM sampling, a unified RL training wrapper, subgoal-quality evaluation and multi-seed comparisons. The low-level policy receives numerical robot/object observations as well as an image in the image-conditioned conditions; this is not a purely vision-based agent.
-
 ## Environment and installation
 
 The archived experiments were run with Python 3.12 and PyTorch 2.7.0 on a MacBook Air with Apple Silicon and 8 GB RAM. Diffusion inference used the MPS backend. Other platforms and accelerators may produce different results and require platform-specific MuJoCo rendering configuration.
