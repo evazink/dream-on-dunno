@@ -1,5 +1,3 @@
-# self-play
-
 ## Setup
 
 ### uv
