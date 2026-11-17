@@ -25,4 +25,4 @@ uv sync
 ```
 
 ### Data
-We use [minari](https://minari.farama.org/)'s Kitchen environment to build our dataset. 
+I use [minari](https://minari.farama.org/)'s Kitchen environment to build our dataset. 
